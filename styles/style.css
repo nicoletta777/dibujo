@@ -1,3 +1,57 @@
-div {
+html {
+        background-color: azure;
+}
+body {
+        width: 30vw;
+        margin: 50px;
+        background-color: pink;
+}
+h1 {
         background-color: rgb(222,203,125);
+}
+
+div{
+        background-color: aqua;
+        width: 30vw; 
+}
+
+.divRojo {
+        background-color:blue
+}
+#dibujo {
+        width: 30vw;
+        height: 30vh;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#cara {
+        width: 60%;
+        height: 60%;
+        background-color: blueviolet;
+        border-radius: 50%;
+        position: relative;
+        
+}
+.ojos{
+        width: 20%;
+        height: 20%;
+        background-color: greenyellow;
+        border-radius: 50%;
+        position: absolute;
+
+}
+#ojoDer {
+        top: 20%;
+        right: 20%;
+}
+
+#ojoIzq {
+         top: 20%;
+        left: 20%;
+}
+
+.nariz {
+background-color: aqua;
 }
