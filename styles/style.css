@@ -26,7 +26,6 @@ body {
     animation: moverCara 4s infinite alternate ease-in-out;
 }
 
-/* OJOS */
 .ojos {
     width: 20%;
     height: 20%;
@@ -46,7 +45,6 @@ body {
     left: 20%;
 }
 
-/* CEJAS */
 #cejaDer, #cejaIzq {
     width: 25%;
     height: 5%;
