@@ -1,57 +1,113 @@
 html {
-        background-color: azure;
+    background-color: azure;
 }
+
 body {
-        width: 30vw;
-        margin: 50px;
-        background-color: pink;
-}
-h1 {
-        background-color: rgb(222,203,125);
+    width: 70dvw;
+    margin: 60px;
+    background-color: rgb(198, 46, 71);
 }
 
-div{
-        background-color: aqua;
-        width: 30vw; 
-}
-
-.divRojo {
-        background-color:blue
-}
 #dibujo {
-        width: 30vw;
-        height: 30vh;
-        background-color: pink;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 50vw;
+    height: 70vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#cara {
-        width: 60%;
-        height: 60%;
-        background-color: blueviolet;
-        border-radius: 50%;
-        position: relative;
-        
-}
-.ojos{
-        width: 20%;
-        height: 20%;
-        background-color: greenyellow;
-        border-radius: 50%;
-        position: absolute;
 
+#cara {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(180, 156, 203);
+    border-radius: 50%;
+    position: relative;
+    animation: moverCara 4s infinite alternate ease-in-out;
 }
+
+/* OJOS */
+.ojos {
+    width: 20%;
+    height: 20%;
+    background-color: rgb(207, 33, 158);
+    border-radius: 50%;
+    position: absolute;
+    animation: parpadeo 4s infinite;
+}
+
 #ojoDer {
-        top: 20%;
-        right: 20%;
+    top: 25%;
+    right: 20%;
 }
 
 #ojoIzq {
-         top: 20%;
-        left: 20%;
+    top: 25%;
+    left: 20%;
 }
 
-.nariz {
-background-color: aqua;
+/* CEJAS */
+#cejaDer, #cejaIzq {
+    width: 25%;
+    height: 5%;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+}
+
+#cejaIzq {
+    left: 18%;
+}
+
+#cejaDer {
+    right: 18%;
+}
+
+#nariz {
+    width: 10%;
+    height: 15%;
+    background-color: rgb(150, 120, 180);
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border-radius: 20px;
+}
+
+#boca {
+    width: 40%;
+    height: 20%;
+    border-bottom: 8px solid black;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    border-radius: 50%;
+    animation: sonrisa 3s infinite alternate;
+}
+
+@keyframes parpadeo {
+    0%, 90%, 100% {
+        height: 20%;
+    }
+    95% {
+        height: 2%;
+    }
+}
+
+@keyframes sonrisa {
+    0% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 10%;
+    }
+}
+
+@keyframes moverCara {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
 }
